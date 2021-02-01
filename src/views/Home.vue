@@ -8,16 +8,6 @@
 // @ is an alias to /src
 
 export default {
-  name: "Home"
-};
-</script>
-
-<style>
-h1 {
-  color: red;
-
-  @media (--t) {
-    color: blue;
-  }
+  name: 'Home'
 }
-</style>
+</script>
