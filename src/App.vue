@@ -1,11 +1,16 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/profile">Profile</router-link> |
-      <router-link to="/explore">Explore</router-link> |
-      <router-link to="/direct">Direct Message</router-link>
-    </div>
+  <div class="app">
+    <MainHeader />
     <router-view />
   </div>
 </template>
+
+<script>
+import MainHeader from '@/components/Header'
+export default {
+  name: 'App',
+  components: {
+    MainHeader
+  }
+}
+</script>
