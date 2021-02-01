@@ -11,15 +11,15 @@
 
       <nav class="navigation">
         <router-link to="/">
-          <IconHomeFill v-if="$root.name === 'Home'" />
+          <IconHomeFill v-if="$route.name === 'Home'" />
           <IconHome v-else />
         </router-link>
         <router-link to="/direct">
-          <IconDirectFill v-if="$root.name === 'Direct'" />
+          <IconDirectFill v-if="$route.name === 'Direct'" />
           <IconDirect v-else />
         </router-link>
         <router-link to="/explore">
-          <IconExploreFill v-if="$root.name === 'Explore'" />
+          <IconExploreFill v-if="$route.name === 'Explore'" />
           <IconExplore v-else />
         </router-link>
 
