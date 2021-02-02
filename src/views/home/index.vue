@@ -1,8 +1,7 @@
 <template>
   <div class="home">
     <div class="timeline">
-      <p>lorem</p>
-      <CustomText>Test</CustomText>
+      <Avatar :size="26" />
     </div>
 
     <div class="sidebar">
@@ -13,10 +12,12 @@
 
 <script>
 import CustomText from '@/components/CustomText'
+import Avatar from '@/components/Avatar'
 
 export default {
   name: 'Home',
   components: {
+    Avatar,
     CustomText
   }
 }
