@@ -1,8 +1,13 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
-    <CustomText tag="p">Hello</CustomText>
-    <CustomText tag="b" size="x-small">Hello</CustomText>
+    <div class="timeline">
+      <p>lorem</p>
+      <CustomText>Test</CustomText>
+    </div>
+
+    <div class="sidebar">
+      <CustomText>lorem</CustomText>
+    </div>
   </div>
 </template>
 
@@ -16,3 +21,26 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.home {
+  max-width: 605px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (--t) {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1fr 295px;
+    grid-gap: 30px;
+  }
+}
+
+.sidebar {
+  display: none;
+
+  @media (--t) {
+    display: block;
+  }
+}
+</style>
